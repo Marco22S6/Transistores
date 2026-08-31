@@ -1,0 +1,17 @@
+# MPLAB X build outputs and temporary folders
+build/
+dist/
+nbproject/private/
+nbproject/Makefile-*.properties
+nbproject/Package-*.bash
+
+# Object files & executables
+*.o
+*.elf
+*.hex
+*.cof
+*.d
+
+# OS generated files
+.DS_Store
+Thumbs.db
