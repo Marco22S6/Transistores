@@ -1,9 +1,9 @@
 # MPLAB X build outputs and temporary folders
-build/
-dist/
-nbproject/private/
-nbproject/Makefile-*.properties
-nbproject/Package-*.bash
+**/build/
+**/dist/
+**/nbproject/private/
+**/nbproject/Makefile-*.properties
+**/nbproject/Package-*.bash
 
 # Object files & executables
 *.o
