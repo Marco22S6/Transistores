@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED="TP2 Transistores.asm"
+SOURCEFILES_QUOTED_IF_SPACED="TP2 Transistores.asm" "TP2 grupo Transistores.asm"
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED="${OBJECTDIR}/TP2 Transistores.o"
-POSSIBLE_DEPFILES="${OBJECTDIR}/TP2 Transistores.o.d"
+OBJECTFILES_QUOTED_IF_SPACED="${OBJECTDIR}/TP2 Transistores.o" "${OBJECTDIR}/TP2 grupo Transistores.o"
+POSSIBLE_DEPFILES="${OBJECTDIR}/TP2 Transistores.o.d" "${OBJECTDIR}/TP2 grupo Transistores.o.d"
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/TP2\ Transistores.o
+OBJECTFILES=${OBJECTDIR}/TP2\ Transistores.o ${OBJECTDIR}/TP2\ grupo\ Transistores.o
 
 # Source Files
-SOURCEFILES=TP2 Transistores.asm
+SOURCEFILES=TP2 Transistores.asm TP2 grupo Transistores.asm
 
 
 
@@ -103,6 +103,14 @@ ${OBJECTDIR}/TP2\ Transistores.o: TP2\ Transistores.asm  nbproject/Makefile-${CN
 	@${DEP_GEN} -d "${OBJECTDIR}/TP2 Transistores.o"
 	@${FIXDEPS} "${OBJECTDIR}/TP2 Transistores.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
+${OBJECTDIR}/TP2\ grupo\ Transistores.o: TP2\ grupo\ Transistores.asm  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} "${OBJECTDIR}/TP2 grupo Transistores.o".d 
+	@${RM} "${OBJECTDIR}/TP2 grupo Transistores.o" 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/TP2 grupo Transistores.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_PK3=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/TP2 grupo Transistores.lst\" -e\"${OBJECTDIR}/TP2 grupo Transistores.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/TP2 grupo Transistores.o\" \"TP2 grupo Transistores.asm\" 
+	@${DEP_GEN} -d "${OBJECTDIR}/TP2 grupo Transistores.o"
+	@${FIXDEPS} "${OBJECTDIR}/TP2 grupo Transistores.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
+	
 else
 ${OBJECTDIR}/TP2\ Transistores.o: TP2\ Transistores.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -111,6 +119,14 @@ ${OBJECTDIR}/TP2\ Transistores.o: TP2\ Transistores.asm  nbproject/Makefile-${CN
 	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/TP2 Transistores.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/TP2 Transistores.lst\" -e\"${OBJECTDIR}/TP2 Transistores.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/TP2 Transistores.o\" \"TP2 Transistores.asm\" 
 	@${DEP_GEN} -d "${OBJECTDIR}/TP2 Transistores.o"
 	@${FIXDEPS} "${OBJECTDIR}/TP2 Transistores.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
+	
+${OBJECTDIR}/TP2\ grupo\ Transistores.o: TP2\ grupo\ Transistores.asm  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} "${OBJECTDIR}/TP2 grupo Transistores.o".d 
+	@${RM} "${OBJECTDIR}/TP2 grupo Transistores.o" 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/TP2 grupo Transistores.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/TP2 grupo Transistores.lst\" -e\"${OBJECTDIR}/TP2 grupo Transistores.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/TP2 grupo Transistores.o\" \"TP2 grupo Transistores.asm\" 
+	@${DEP_GEN} -d "${OBJECTDIR}/TP2 grupo Transistores.o"
+	@${FIXDEPS} "${OBJECTDIR}/TP2 grupo Transistores.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 endif
 
